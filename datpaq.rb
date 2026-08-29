@@ -5,12 +5,12 @@
 class Datpaq < Formula
   desc "Comprehensive multi-service API platform providing aviation, geolocation, financial, utilities, image processing,..."
   homepage "https://github.com/datpaq/cli"
-  version "1.5.0"
+  version "1.5.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datpaq/cli/releases/download/v1.5.0/datpaq_1.5.0_darwin_amd64.tar.gz"
-      sha256 "1c0b683253bbae41623e9ca3a2afef5923700910b3b17bfae968d4835154792e"
+      url "https://github.com/datpaq/cli/releases/download/v1.5.1/datpaq_1.5.1_darwin_amd64.tar.gz"
+      sha256 "b1f8faa49fb3221f3a6d08790ca70cc76c3d5faccf105f271dd55c1f0bea12bb"
 
       define_method(:install) do
         bin.install "datpaq"
@@ -18,8 +18,8 @@ class Datpaq < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datpaq/cli/releases/download/v1.5.0/datpaq_1.5.0_darwin_arm64.tar.gz"
-      sha256 "1e80f5fc27ed1d13bf521a0b975619dacd446822a1e62c35a4e562d6a56dfea8"
+      url "https://github.com/datpaq/cli/releases/download/v1.5.1/datpaq_1.5.1_darwin_arm64.tar.gz"
+      sha256 "56c06e58a378543c098748b49ee496d827d663498067416ddaa8f27a3e5ad61e"
 
       define_method(:install) do
         bin.install "datpaq"
@@ -30,16 +30,16 @@ class Datpaq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datpaq/cli/releases/download/v1.5.0/datpaq_1.5.0_linux_amd64.tar.gz"
-      sha256 "e236af739f0bfe429c9cb6ec1da6b3a697100b1bd58607f3ef7b0f41e4914798"
+      url "https://github.com/datpaq/cli/releases/download/v1.5.1/datpaq_1.5.1_linux_amd64.tar.gz"
+      sha256 "1a20219065520a044cdebeb639d757436813a9d28086e40fc625a1293206fdba"
       define_method(:install) do
         bin.install "datpaq"
         bin.install "datpaq-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datpaq/cli/releases/download/v1.5.0/datpaq_1.5.0_linux_arm64.tar.gz"
-      sha256 "2fef7fe9c62bded6ab87132dda87147b1c3f14a6d4f70fc2320404ac21da4be3"
+      url "https://github.com/datpaq/cli/releases/download/v1.5.1/datpaq_1.5.1_linux_arm64.tar.gz"
+      sha256 "663d4cc1857d2d07e480dc7b740d497a28fcba26ef70953d917580aab533d056"
       define_method(:install) do
         bin.install "datpaq"
         bin.install "datpaq-mcp"
